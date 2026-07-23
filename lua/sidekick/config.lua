@@ -93,6 +93,7 @@ local defaults = {
       create = "terminal", ---@type "terminal"|"window"|"split"
       split = {
         vertical = true, -- vertical or horizontal split
+        before = false, -- place the split before the current pane (left when vertical, above when horizontal)
         size = 0.5, -- size of the split (0-1 for percentage)
       },
       -- max lines to capture when dumping a multiplexer pane for scrollback support
